@@ -1,0 +1,9 @@
+services:
+    soil_replica_client.service.client:
+        class: Soil\ReplicaClientBundle\Service\Client
+        arguments: [@soil_notification.notification_selector, @soil_discover.service.resolver]
+        calls:
+            - [setLogger, [@logger]]
+            - [setHttpClient, [@buzz]]
+        tags:
+            - { name: monolog.logger, channel: queue }

@@ -1,0 +1,18 @@
+{
+    "name": "soil/replica-client-bundle",
+    "version": "0.0.1",
+    "dist": {
+        "url": "https://github.com/soilby/replica-client-bundle",
+        "type": "vcs"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soil\\ReplicaClientBundle\\": "./"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": "2.6.*",
+
+    }
+}
